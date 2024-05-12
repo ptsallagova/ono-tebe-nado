@@ -2,16 +2,49 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оно тебе надо</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header></header>
+    <header class="content-section header">
+      <nuv class="header__menu">
+        <ul class="header__links-list">
+          <li class="nobullet header__links-list-item">
+            <a class="header__link" href="#">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link_active" href="#">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link_active" href="#">об аукционе</a>
+          </li>
+        </ul>
+      </nuv>
+      <a class="header__logo">
+        <img 
+          class="header__logo-image"
+          src="./images/logo (1).svg" 
+          alt="ono-tebe-nado">
+      </a>
+      <div class="address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <address>
+          наб. Принсенграхт 263-<br />
+          265, Амстердам
+        </address>
+      </div>
+    </header>
     <main>
-        <section> <h1>Привет</h1> </section>
-        <section></section>
-        <section></section>
+        <section class="content-section cover"></section>
+        <section class="content-sectionlots"></section>
+        <section class="content-section about"></section>
     </main>
-    <footer></footer>
+    <footer class="footer"></footer>
 </body>
 </html>

@@ -1,6 +1,9 @@
 body {
     margin: 0;
-    background-color: aqua;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color:#000;
+    background-color: pink;
 }
 
 h1, 
@@ -16,3 +19,89 @@ blockquote {
     margin: 0;
     padding: 0;
 } 
+
+.content-section {
+    border: 1px solid red;
+    box-sizing: border-box;
+    width: 1100px;
+    /*min-width: ;*/
+    margin: auto;
+    background-color: white;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Создаем три колонки: первая и последняя автоматически подстраиваются под содержимое, а вторая занимает оставшееся пространство */
+    grid-column-gap: 36px; /* Расстояние между колонками 1 и 2 */
+    align-items: center;
+   /* margin-bottom: 180px;*/
+    padding: 92px 24px 96px 24px;
+    font-size: 18px;
+}
+
+.header__menu {
+    grid-column: 1; /* Размещаем элемент hemenu в первой колонке */
+    margin-left: 27px;
+    color: #000;
+    /*
+    display: flex;
+    flex-direction: row;
+    margin-right: 36px;*/
+}
+
+.header__links-list {
+    display: flex;
+    gap: 31px;
+    list-style: circle;
+    margin: 0;
+    padding-left: 0;
+    color: #000;
+}
+
+.header__links-list-item {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+.header__links-list-item a {
+    color: #000;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.nobullet {
+    color: #000;
+    list-style-type: none;
+}
+
+
+.header__logo {
+    grid-column: 2; /* Размещаем элемент her_lo во второй колонке */
+    text-align: center; /* Выравниваем текст по центру */
+    width: 100%;
+}
+
+.address {
+    grid-column: 3; /* Размещаем элемент adress в третьей колонке */
+    margin-left: 180px; /* Устанавливаем отступ слева 180px */
+    margin-right: 26px;
+    font-size: 18px;
+    line-height: 24px; 
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+}
+
+.address a {
+    color: #000;
+    text-underline-position: under;
+}
+
+.address address {
+    font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
